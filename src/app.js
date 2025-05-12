@@ -17,8 +17,9 @@ function generadorescusas(){
   let randomaccion = accion[Math.floor(Math.random() * accion.length)];
   let randomque = que[Math.floor(Math.random() * que.length)];
   let randomcuando = cuando[Math.floor(Math.random() * cuando.length)];
+  
 
-  return `${randomquien} ${randomaccion} ${randomque} ${randomcuando}`;
+  return `${randomquien} ${randomaccion} ${randomque} ${randomcuando}`
 }
 
 document.getElementById('escusas').innerHTML = generadorescusas();
